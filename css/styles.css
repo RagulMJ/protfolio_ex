@@ -34,6 +34,51 @@ header {
   position: fixed;
   z-index: 2;
 }
+.break{
+  width: 100%;
+}
+.alpha.animated{
+  /* display: flex; */
+  color: #08fdd8;
+  animation: ani 0.7s ease-in-out 1;
+}
+
+@keyframes ani {
+  0%{
+    transform: scale(1.2,0.5);
+  }
+  16%{
+    transform: scale(1.2,0.5);
+  }
+  25%{
+    transform: scale(1.2,0.5);
+  }
+  32%{
+    transform: scale(0.8,1.1);
+  }
+  48%{
+    transform: scale(0.95,1);
+  }
+  64%{
+    transform: scale(0.8,1.2);
+  }
+  80%{
+    transform: scale(1.15,1);
+  }
+  87%{
+    transform: scale(1.15,1);
+  }
+  90%{
+    /* This will add the shaking effect one time almost at the end   */
+    transform: scale(0.8,1);
+  }
+  95%{
+    transform: scale(1.05,1);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
 #sound {
   padding: 7px;
   background-color: #1b1b1b;
@@ -169,26 +214,27 @@ header {
   padding-left: 1.5rem;
 }
 .text-zone h1 {
+  display: flex;
   font-size: 3rem;
   line-height: 45px;
   letter-spacing: -3px;
   position: relative;
 }
-.text-zone h1::before {
+.text-zone .text-heading__open::before {
   content: '<h1>';
   position: absolute;
-  top: -80px;
+  top: -50px;
   left: -10px;
   font-size: 1.2rem;
   font-family: 'La Belle Aurore', cursive;
   color: #666565;
   letter-spacing: 3px;
 }
-.text-zone h1::after {
+.text-zone .text-heading__close::after {
   content: '</h1>';
   position: absolute;
-  bottom: -10px;
-  right: -70px;
+  bottom: -35px;
+  right: 60px;
   font-size: 1.2rem;
   font-family: 'La Belle Aurore', cursive;
   color: #666565;
@@ -204,6 +250,26 @@ header {
   letter-spacing: 3px;
   font-size: 14px;
   position: relative;
+}
+.text-zone p::before{
+  content: '<p>';
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  font-size: 1.2rem;
+  font-family: 'La Belle Aurore', cursive;
+  color: #666565;
+  letter-spacing: 3px;
+}
+.text-zone p::after {
+  content: '</p>';
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  font-size: 1.2rem;
+  font-family: 'La Belle Aurore', cursive;
+  color: #666565;
+  letter-spacing: 3px;
 }
 
 /* contact me button */

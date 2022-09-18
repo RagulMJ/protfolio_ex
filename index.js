@@ -41,20 +41,6 @@ const myFunc = (navCondition) => {
   }
 }
 
-//hover effect
-const elements = document.getElementsByClassName('alpha');
-
-        for (let i = 0; i<=elements.length; i++)
-        {
-            elements[i].addEventListener('animationend',function(e){
-                elements[i].classList.remove('animated');
-            });
-
-            elements[i].addEventListener('mouseover',function(e){
-                elements[i].classList.add('animated')
-            })
-        }
-
 // Part 1 javascript functionality ends here
 $(document).ready(function () {
   if (
@@ -153,3 +139,45 @@ const showMessage = (message, updateColor) => {
 }
 
 // Contact section functionality ends here. The FInal part
+
+// hover effect
+const hoverElements = document.getElementsByClassName('alpha');
+
+        for (let i = 0; i<=hoverElements.length; i++)
+        {
+            hoverElements[i].addEventListener('animationend',function(e){
+                hoverElements[i].classList.remove('animated');
+            });
+
+            hoverElements[i].addEventListener('mouseover',function(e){
+                hoverElements[i].classList.add('animated')
+            })
+        }
+//Rotate
+      //   const Texts = [
+      //     'HTML', 'CSS', 'JAVASCRIPT',
+      //     'SWIFT', 'MONGOOSE', 'REACT',
+      //     'PYTHON', 'SASS',
+      //     'DJANGO', 'NODEJS', 'MONGODB',
+      //     'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA'
+      // ];
+
+      // var sphere = document.getElementsByClassName('Sphere') 
+      // var tagCloud = TagCloud(sphere, Texts, {
+
+      //     // Sphere radius in px
+      //     radius: 230,
+
+      //     // animation speed
+      //     // slow, normal, fast
+      //     maxSpeed: 'normal',
+      //     initSpeed: 'fast',
+
+      //     // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+      //     direction: 135,
+
+      //     // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+      //     keep: true
+
+      // });
+// mouse trailing effect

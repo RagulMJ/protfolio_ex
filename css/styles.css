@@ -40,18 +40,18 @@ header {
 .alpha.animated{
   /* display: flex; */
   color: #08fdd8;
-  animation: ani 0.7s ease-in-out 1;
+  animation: ani 1s ease-in-out ;
 }
 
 @keyframes ani {
   0%{
-    transform: scale(1.2,0.5);
+    transform: scale(1.2,0.8);
   }
   16%{
-    transform: scale(1.2,0.5);
+    transform: scale(1.1,0.8);
   }
   25%{
-    transform: scale(1.2,0.5);
+    transform: scale(1.2,0.8);
   }
   32%{
     transform: scale(0.8,1.1);
@@ -70,7 +70,7 @@ header {
   }
   90%{
     /* This will add the shaking effect one time almost at the end   */
-    transform: scale(0.8,1);
+    transform: scale(.95,1);
   }
   95%{
     transform: scale(1.05,1);
@@ -219,6 +219,11 @@ header {
   line-height: 45px;
   letter-spacing: -3px;
   position: relative;
+}
+.text-zone>h1>img{
+  position: relative;
+  bottom: -8px;
+  left: 1.5px;
 }
 .text-zone .text-heading__open::before {
   content: '<h1>';
@@ -608,10 +613,12 @@ textarea {
   width: 100%;
   margin-top: 50px;
   height: 60vh;
+  -webkit-filter: drop-shadow(8px 8px 10px#08fdd8)
+  
 }
 .map-content {
   background-color: #000;
-  color: #f3f3f3;
+  color: #08fdd8;
   position: absolute;
   top: 70px;
   left: 40px;

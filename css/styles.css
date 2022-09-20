@@ -79,6 +79,7 @@ header {
     transform: scale(1,1);
   }
 }
+          /*    TypeWriter Effect      */
 #sound {
   padding: 7px;
   background-color: #1b1b1b;
@@ -510,9 +511,11 @@ header {
 /* contact section starts here. The Final Part */
 .contact-heading {
   margin-bottom: 30px;
+  width: 35vw;
 }
 .contact-section {
   width: 85%;
+  left: -10%;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -521,11 +524,17 @@ header {
   flex-direction: column;
   position: relative;
 }
+.form-input-wrapper{
+  width: 35vw;
+}
 .form-input-group {
   width: 100%;
   position: relative;
 }
-
+.form-input-group>.subject{
+  width: 35vw;
+  margin-top: 5px;
+}
 .form-input-group input,
 textarea {
   width: 100%;
@@ -542,6 +551,10 @@ textarea {
 .form-input-group textarea {
   height: 25vh;
   padding: 10px 20px;
+}
+.form-input-group>textarea{
+  width: 35vw;
+  margin-top: 5px;
 }
 .submit-button {
   background: transparent;
@@ -608,13 +621,12 @@ textarea {
 .google-map {
   width: 100%;
   position: relative;
+  left: 20%;    
 }
 .google-map iframe {
   width: 100%;
   margin-top: 50px;
   height: 60vh;
-  -webkit-filter: drop-shadow(8px 8px 10px#08fdd8)
-  
 }
 .map-content {
   background-color: #000;

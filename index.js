@@ -153,31 +153,27 @@ const hoverElements = document.getElementsByClassName('alpha');
                 hoverElements[i].classList.add('animated')
             })
         }
-//Rotate
-      //   const Texts = [
-      //     'HTML', 'CSS', 'JAVASCRIPT',
-      //     'SWIFT', 'MONGOOSE', 'REACT',
-      //     'PYTHON', 'SASS',
-      //     'DJANGO', 'NODEJS', 'MONGODB',
-      //     'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA'
-      // ];
-
-      // var sphere = document.getElementsByClassName('Sphere') 
-      // var tagCloud = TagCloud(sphere, Texts, {
-
-      //     // Sphere radius in px
-      //     radius: 230,
-
-      //     // animation speed
-      //     // slow, normal, fast
-      //     maxSpeed: 'normal',
-      //     initSpeed: 'fast',
-
-      //     // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
-      //     direction: 135,
-
-      //     // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
-      //     keep: true
-
-      // });
-// mouse trailing effect
+//typewriter effect
+const typedElements = document.getElementsByClassName('beta');
+        const typedElements2 = document.getElementsByClassName('beta2');
+        const typedElements3 = document.getElementsByClassName('beta3');
+        const typedElements4 = document.getElementsByClassName('beta4');
+        const typedElements5 = document.getElementsByClassName('beta5');
+        const typedElements6 = document.getElementsByClassName('beta6');
+        const typedElements7 = document.getElementsByClassName('beta7');
+        const typedElements8 = document.getElementsByClassName('beta8');
+        const typedElements9 = document.getElementsByClassName('beta9');
+        for (let i = 0; i <= elements.length; i++) {
+            elements[i].addEventListener('animationend', function (e) {
+                elements[i].classList.remove('typedAnimated');
+            });
+            typedElements[i].classList.add('typedAnimated');
+            typedElements2[i].classList.add('typedAnimated2');
+            typedElements3[i].classList.add('typedAnimated3');
+            typedElements4[i].classList.add('typedAnimated4');
+            typedElements5[i].classList.add('typedAnimated5');
+            typedElements6[i].classList.add('typedAnimated6');
+            typedElements7[i].classList.add('typedAnimated7');
+            typedElements8[i].classList.add('typedAnimated8');
+            typedElements9[i].classList.add('typedAnimated9');
+        }
